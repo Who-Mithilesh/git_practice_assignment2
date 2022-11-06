@@ -1,15 +1,21 @@
+function checkPrime(num)
+{
+	if(num<=1){
+		return false;
+	}else{
+		for(let i=2;i<=num**0.5;i++){
+			if(num%i==0){
+				return false;
+			}
+		}
+		return true;
+	}
 
-let num = 5;
-let count = 0;
-
-    for(let i=1;i<=num;i++){
-        if(num % i == 0){
-            count++;
-        }
-
-        if(count == 2){
-            console.log("Prime")
-        } else {
-            console.log("NA");
-        }
+}
+let N = 1;
+let ans=checkPrime(N);
+if (ans){
+  console.log(N,": Prime");
+}else{
+  console.log(N,": Not Prime");
 }
