@@ -12,10 +12,10 @@ function checkPrime(num)
 	}
 
 }
-let N = 1;
-let ans=checkPrime(N);
-if (ans){
-  console.log(N,": Prime");
+let input = 1;
+let output=checkPrime(input);
+if (output){
+  console.log(input,": Prime");
 }else{
-  console.log(N,": Not Prime");
+  console.log(input,": Not Prime");
 }
